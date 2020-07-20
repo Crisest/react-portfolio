@@ -1,0 +1,143 @@
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$s-size: 1.2rem;
+$xl-size: 4rem;
+$dark-blue: #364051;
+$primary: #1BC0DA ;
+$desktop-breakpoint: 45rem;
+
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media(min-width: 800px){
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+    @media(min-width: 1050px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+}
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(min-width: $desktop-breakpoint){
+        display: flex;
+        justify-content: center;
+        margin-bottom: $s-size;
+    }
+}
+
+.list__button{
+    margin-top: $s-size;
+    @media(min-width: $desktop-breakpoint){
+        margin-right: $s-size;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 80rem;
+    h1{
+        color: #35393C;
+        font-weight: 400;
+        font-size: 25px;
+    }
+}
+
+.container__centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: $primary;
+    padding-top: 8rem;
+}
+
+.header__title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: $m-size;
+}
+
+.header__subtitle {
+    color: $primary;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 $xl-size 0;
+    padding-left: $m-size;
+}
+
+.logo{ 
+    margin-top: 1rem;
+    display: flex;   
+    justify-content: center;
+    align-content: center;
+    h1{
+        color: #fff;
+        font-size: 50px;
+    }
+}
+
+.landing {
+    background: url(./img/landing-background.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    
+}
+
+.landing__background{
+    min-height: 100vh;
+    width: 100vw;
+    background: fade-out($color: black, $amount: .15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing__space{
+    align-content: space-between;
+}
+
+
+.landing__title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: $xl-size;
+}
+
+.landing__link {
+    color: white;
+    font-size: 25px;
+}
+
+
+.devicon-git-plain {
+    max-width: 1.6em;
+  }
+  
+  /* if you want to change the original color */
+  .devicon-git-plain path {
+    fill: $primary;
+  }
+
+
