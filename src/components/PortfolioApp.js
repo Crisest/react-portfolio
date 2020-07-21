@@ -17,7 +17,7 @@ const PortfolioApp = () => {
         <div className="container">
         
           <h1 className="container_centered">Graduated from Niagara College with an advance diploma on Computer Programming Analyst. I posses many skills developed trough practical
-          experience, and interships. Designed, Planned and Deployed multiple full-stack web-applications. I am proeficient with JavaScript, C#, PHP</h1>
+          experience, and interships. Designed, Planned and Deployed multiple full-stack web-applications. I am proeficient with JavaScript, C#, and PHP.</h1>
           <img src={icon} style={svgStyle} alt="svg "/>
       </div>
         </div>  

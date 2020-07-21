@@ -30,10 +30,13 @@ const ProjectsPage = () => {
         </div>
         <div className="container">
             <div className="projects-list">
-            {filteredProjects.map((filter) => (          
-                <ProjectItem project={filter} key={filter.title}/>
-            )).sort()}
-        </div>
+
+                {filteredProjects.map((filter) => (          
+                    <ProjectItem project={filter} key={filter.title}/>
+                )).sort()}
+            
+            </div>
+
         </div>
 
         

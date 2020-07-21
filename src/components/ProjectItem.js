@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Modal } from 'antd';
 import { LinkOutlined, EllipsisOutlined, GithubOutlined } from '@ant-design/icons';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import squashPic from '../icons/Squash_Niagara_Logo.png'
 import stackpolePic from '../icons/004.png'
 import expensifyPic from '../icons/expensify.png'
@@ -47,10 +48,16 @@ const ProjectItem = ( { project } ) => {
             cover = weatherAppImg
     }
     return (
-        <div>  
+        <div className="grid-item">  
+            <ReactCSSTransitionGroup
+            transitionAppear={true}
+            transitionAppearTimeout={600}
+            transitionEnterTimeout={600}
+            transitionLeaveTimeout={200}
+            transitionName="SlideIn"
+        > 
             <Card
-                hoverable
-                style={{width:275}}
+                style={{width:275, borderColor:'#364051'}}
                 cover={<img alt="example" src={cover} />}
                 actions={[
                     project.github ? <a href={project.github}><GithubOutlined  key="github" /></a> : null,
@@ -59,12 +66,11 @@ const ProjectItem = ( { project } ) => {
                    <a  onClick={showModal}> <EllipsisOutlined key="ellipsis" /></a>,
                   ]}
             >
-            <Meta 
-            title={project.title} 
-            description={project.skills.map((skill) => skill + ' ')}
-            
-            />
-        </Card>
+                <Meta 
+                title={project.title} 
+                description={project.skills.map((skill) => skill + ' ')}  
+                />
+            </Card>
             <Modal
             title={project.title}
             visible={visible}
@@ -74,6 +80,7 @@ const ProjectItem = ( { project } ) => {
             <img style={{maxWidth: '100%', marginBottom: 10}} alt="example" src={cover} />
             <p>{project.description}</p>
             </Modal>
+        </ReactCSSTransitionGroup>
     </div>
     )
 }
