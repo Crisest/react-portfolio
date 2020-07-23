@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import LandingPage from '../components/LandingPage'
 import PortfolioApp from '../components/PortfolioApp'
 import ProjectsPage from '../components/ProjectsPage'
+import MobileMenu from '../components/MobileMenu'
 
 
 
@@ -18,10 +19,12 @@ const PortfolioRouter =  () => (
         <Switch>
           <Route path="/react-portfolio" component={LandingPage} />
           <Fragment>
-          <Sider>
-            <Header />
+            <Sider className="show-for-desktop">
+              <Header />
             </Sider>
+            
             <Content>
+              <MobileMenu className="show-for-mobile" />
               <Route exact path="/" component={PortfolioApp}/>
               <Route exact path="/projects" component={ProjectsPage} />
               <Route path="/contact" component={ContactPage} />

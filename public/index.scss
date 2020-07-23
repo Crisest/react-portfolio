@@ -7,6 +7,14 @@ $primary: #1BC0DA ;
 $desktop-breakpoint: 45rem;
 
 
+.svg-style{
+    max-width: 15rem;
+    margin-top: 1.6rem;
+    @media(min-width: 900px){
+        float: right;
+    }
+}
+
 .contact-icons{
     
     display: flex;
@@ -79,9 +87,15 @@ $desktop-breakpoint: 45rem;
 }
 
 .container__centered{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    max-width: 80rem;
+    text-align: center;
+    h1{
+        color: #35393C;
+        font-weight: 400;
+        font-size: 25px;
+    }
 }
 
 .header {
@@ -161,6 +175,46 @@ $desktop-breakpoint: 45rem;
   /* if you want to change the original color */
   .devicon-git-plain path {
     fill: $primary;
+  }
+
+  .show-for-mobile {
+    @media (min-width: $desktop-breakpoint){
+        display: none;
+    }
+}
+
+    .show-for-desktop {
+    @media (max-width: $desktop-breakpoint - .01rem){
+        display: none;
+    }
+}
+
+.single-foo-menu {
+    position: absolute;
+    z-index: 90 !important;
+    width: 100%;
+  }
+  
+  .single-menu-active .single-top-nav-bar{
+    z-index: 90;
+  }
+  
+  .single-top-nav-bar {
+    position: relative;
+    background-color: #008AE6;
+    color: #FFF;
+  }
+  .am-navbar-title {
+    color: #FFF!important;
+  }
+  .menu-mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 89;
   }
 
   .SlideIn-appear {

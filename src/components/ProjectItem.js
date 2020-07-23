@@ -57,7 +57,7 @@ const ProjectItem = ( { project } ) => {
             transitionName="SlideIn"
         > 
             <Card
-                style={{width:275, borderColor:'#364051'}}
+                style={{width:275, borderColor:'#1BC0DA'}}
                 cover={<img alt="example" src={cover} />}
                 actions={[
                     project.github ? <a href={project.github}><GithubOutlined  key="github" /></a> : null,
