@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom'
 import { Menu } from 'antd'
+import Resume from '../docs/YM_july.pdf'
 
 
 const Header = ({ location }) => {
@@ -18,6 +19,8 @@ const Header = ({ location }) => {
                 <Menu.Item key="1"><Link to="/"> Home </Link></Menu.Item>
                 <Menu.Item key="2"><Link to="/projects"> Projects </Link></Menu.Item>
                 <Menu.Item key="3"><Link to="/contact"> Contact Me</Link></Menu.Item>
+                <Menu.Item key="4"><a rel="noopener noreferrer" target="_blank" href={Resume}>
+                Resume</a></Menu.Item>
           </Menu>
       </React.Fragment>
     )

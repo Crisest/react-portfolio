@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { Menu, ActivityIndicator, NavBar } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css'
 
-const MobileMenu = () => {
+const MobileMenu = ({history}) => {
     const data = [
         {
           value: '1',
+          label: 'Select Page',
+          component: ''
+        },
+        {
+          value: '2',
           label: 'Home',
           component: "/"
         }, {
-          value: '2',
+          value: '3',
           label: 'Projects',
           component: "/projects"
         },
         {
-          value: '3',
+          value: '4',
           label: 'Contact me',
           component: "/contact"
         },
@@ -29,8 +34,7 @@ const MobileMenu = () => {
         let label = '';
         data.forEach((dataItem) => {
           if (dataItem.value === value[0]) {
-            label = dataItem.label;
-            
+            history.push(dataItem.component)
           }
         });
         console.log(label);
@@ -66,6 +70,7 @@ const MobileMenu = () => {
       </div>
     );
     return(
+        <div className="show-for-mobile">
         <div className={show ? 'single-menu-active' : ''}>
         <div>
           <NavBar
@@ -80,9 +85,10 @@ const MobileMenu = () => {
         {show ? initData ? menuEl : loadingEl : null}
         {show ? <div className="menu-mask" onClick={onMaskClick} /> : null}
       </div>
+        </div>
 
     )
 
 }
 
-export { MobileMenu as default }
+export default withRouter(MobileMenu)

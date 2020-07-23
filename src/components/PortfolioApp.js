@@ -19,7 +19,9 @@ const PortfolioApp = () => {
           <h1 >Back-end: C# ASP.NET Core MVC, PHP Laravel, NodeJs Express.</h1>
           <h1 >DB: SQL server, MySQL, MongoDB, SQLite.</h1>
           </div>
-          <img className="svg-style" src={icon} alt="programmer icon svg"/>
+          <div className="image-centered">
+            <img className="svg-style" src={icon} alt="programmer icon svg"/>
+          </div>
           
       </div>
         </div>  
