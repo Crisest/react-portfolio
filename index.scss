@@ -23,6 +23,7 @@ $desktop-breakpoint: 45rem;
 
     @media(min-width: $desktop-breakpoint){
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         margin-top: $xl-size;
