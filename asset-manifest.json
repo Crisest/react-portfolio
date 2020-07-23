@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.8f7c5001.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.c5183bf8.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.c5183bf8.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.0bbe8400.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.52f6cfd7.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.52f6cfd7.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.8a7d631b.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.8a7d631b.js.map",
     "static/css/2.c34640d7.chunk.css": "/react-portfolio/static/css/2.c34640d7.chunk.css",
-    "static/js/2.0e73c4d6.chunk.js": "/react-portfolio/static/js/2.0e73c4d6.chunk.js",
-    "static/js/2.0e73c4d6.chunk.js.map": "/react-portfolio/static/js/2.0e73c4d6.chunk.js.map",
+    "static/js/2.13457602.chunk.js": "/react-portfolio/static/js/2.13457602.chunk.js",
+    "static/js/2.13457602.chunk.js.map": "/react-portfolio/static/js/2.13457602.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.e91ace8bc0831405501a5963698fe803.js": "/react-portfolio/precache-manifest.e91ace8bc0831405501a5963698fe803.js",
+    "precache-manifest.fa86f59da874af86db438a2fc95ba503.js": "/react-portfolio/precache-manifest.fa86f59da874af86db438a2fc95ba503.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/css/2.c34640d7.chunk.css.map": "/react-portfolio/static/css/2.c34640d7.chunk.css.map",
-    "static/css/main.8f7c5001.chunk.css.map": "/react-portfolio/static/css/main.8f7c5001.chunk.css.map",
-    "static/js/2.0e73c4d6.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.0e73c4d6.chunk.js.LICENSE.txt",
+    "static/css/main.0bbe8400.chunk.css.map": "/react-portfolio/static/css/main.0bbe8400.chunk.css.map",
+    "static/js/2.13457602.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.13457602.chunk.js.LICENSE.txt",
     "static/media/004.png": "/react-portfolio/static/media/004.184a5d7c.png",
     "static/media/Squash_Niagara_Logo.png": "/react-portfolio/static/media/Squash_Niagara_Logo.bcb51180.png",
     "static/media/YM_july.pdf": "/react-portfolio/static/media/YM_july.3a6851a5.pdf",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.8a7d631b.js",
     "static/css/2.c34640d7.chunk.css",
-    "static/js/2.0e73c4d6.chunk.js",
-    "static/css/main.8f7c5001.chunk.css",
-    "static/js/main.c5183bf8.chunk.js"
+    "static/js/2.13457602.chunk.js",
+    "static/css/main.0bbe8400.chunk.css",
+    "static/js/main.52f6cfd7.chunk.js"
   ]
 }

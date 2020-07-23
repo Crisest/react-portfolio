@@ -54,7 +54,14 @@
 }
 
 .contact-subtitle {
-  padding-left: 1.6rem;
+  font-size: 20px;
+}
+
+@media (min-width: 45rem) {
+  .contact-subtitle {
+    padding-left: 1.6rem;
+    font-size: 35px;
+  }
 }
 
 .projects-list {

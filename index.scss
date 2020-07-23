@@ -40,7 +40,11 @@ $desktop-breakpoint: 45rem;
 }
 
 .contact-subtitle {
-    padding-left: $m-size;
+    font-size: 20px;
+    @media(min-width: $desktop-breakpoint) {
+        padding-left: $m-size;
+        font-size: 35px;
+    }
 }
 
 .projects-list {
