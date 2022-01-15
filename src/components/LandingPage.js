@@ -7,7 +7,7 @@ const LandingPage = () => (
             <h1 className="landing__title">Hi, I am Yorguin. I develop Full Stack Web Apps.</h1>
 
             <div className="landing__bottom">                
-                <Link className="landing__link" to={'/'}>Learn more about what I do...</Link>
+                <Link className="landing__link" to={'/bio'}>Learn more about what I do...</Link>
             </div>       
         </div>
     </div>

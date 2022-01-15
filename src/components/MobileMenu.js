@@ -13,7 +13,7 @@ const MobileMenu = ({history}) => {
         {
           value: '2',
           label: 'Home',
-          component: "/"
+          component: "/bio"
         }, {
           value: '3',
           label: 'Projects',
@@ -61,7 +61,7 @@ const MobileMenu = ({history}) => {
         value={['1']}
         level={1}
         onChange={onChange}
-        height={document.documentElement.clientHeight * 0.2}
+        height={document.documentElement.clientHeight * 0.4}
       />
     );
     const loadingEl = (

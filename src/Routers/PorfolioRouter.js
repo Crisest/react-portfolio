@@ -7,6 +7,7 @@ import LandingPage from '../components/LandingPage'
 import PortfolioApp from '../components/PortfolioApp'
 import ProjectsPage from '../components/ProjectsPage'
 import MobileMenu from '../components/MobileMenu'
+import NotFoundPage from '../components/NotFoundPage'
 
 
 
@@ -17,7 +18,7 @@ const PortfolioRouter =  () => (
   <Layout className="layout" style={{ minHeight: '100vh' }}>
       <Router> 
         <Switch>
-          <Route path="/react-portfolio" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
           <Fragment>
             <Sider className="show-for-desktop">
               <Header />
@@ -25,11 +26,13 @@ const PortfolioRouter =  () => (
             
             <Content>
               <MobileMenu className="show-for-mobile" />
-              <Route exact path="/" component={PortfolioApp}/>
-              <Route exact path="/projects" component={ProjectsPage} />
-              <Route path="/contact" component={ContactPage} />
+              <Route  path="/bio" component={PortfolioApp} />
+              <Route  path="/projects" component={ProjectsPage} />
+              <Route  path="/contact" component={ContactPage} />
+              
             </Content>
           </Fragment>
+          <Route component={NotFoundPage} />
         </Switch>
       </Router>
     </Layout>

@@ -23,6 +23,7 @@ $desktop-breakpoint: 45rem;
 
     @media(min-width: $desktop-breakpoint){
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         margin-top: $xl-size;
@@ -39,7 +40,11 @@ $desktop-breakpoint: 45rem;
 }
 
 .contact-subtitle {
-    padding-left: $m-size;
+    font-size: 20px;
+    @media(min-width: $desktop-breakpoint) {
+        padding-left: $m-size;
+        font-size: 35px;
+    }
 }
 
 .projects-list {

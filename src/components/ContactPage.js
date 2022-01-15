@@ -1,10 +1,6 @@
 import React from 'react';
-import { Typography } from 'antd';
 import pIcon from '../icons/phone.svg'
 import emailIcon from '../icons/email.svg'
-
-
-const { Title } = Typography;
 
 const ContactPage = () => {
     return (
@@ -19,13 +15,13 @@ const ContactPage = () => {
               <div className="contact-icons__item">              
                 <a href="mailto: ymurillov@gmail.com">
                   <img style={{width: 250}} src={emailIcon} alt="email icon" />
-                  <Title style={{color: "#364051"}}>ymurillov@gmail.com</Title>
+                  <h1 className="contact-subtitle" style={{color: "#364051"}}>ymurillov@gmail.com</h1>
                 </a>
               </div>
               <div  className="contact-icons__item">
                 <a href="tel:9059841012">
                   <img style={{width: 250}} src={pIcon} alt="telephon icon"/>
-                  <Title style={{color: "#364051"}}>9059841012</Title>
+                  <h1 className="contact-subtitle" style={{color: "#364051"}}>905-984-1012</h1>
                 </a>
               </div>
             </div>

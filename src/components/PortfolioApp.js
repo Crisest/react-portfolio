@@ -10,7 +10,7 @@ const PortfolioApp = () => {
       <div className="header">
         <h1 className="header__title">Full Stack Software Developer </h1>
       </div>
-        <h1 className="header__subtitle"> I don't write a lot of code. I solve a lot of problems.</h1>
+        <h1 className="header__subtitle"> I don't write a lot of code. I solve a lot of problems</h1>
         <div className="container">
           
           <h1 >Graduated from Niagara College with an advance diploma in Computer Programming Analyst. I possess many skills that were developed through both practical experiences and internships. I also designed, planned, tested, and deployed multiple full-stack web applications with different technologies.</h1>
